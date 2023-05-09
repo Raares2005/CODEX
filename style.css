@@ -1,12 +1,12 @@
 * {
-    
+
     margin: 0;
 }
 
 
 body {
     overflow-x: hidden;
-    
+
     background-color: #faf6f6;
 }
 
@@ -30,28 +30,30 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 /* PRIMA SECTIUNE */
 
 #firstSection {
-    height: 300px;
+
     background-color: #051130;
     padding: 60px 0;
 }
 
-#firstSection > .container {
+#firstSection>.container {
     max-width: 85%;
     width: 960px;
     margin: 0 auto;
 }
 
-#firstSection > .container >  h1 {
+#firstSection>.container>h1 {
     padding-top: 10px;
     padding-bottom: 15px;
     font-size: 1.3rem;
     color: #fff;
 }
 
-#firstSection > .container > p {
+#firstSection>.container>p {
     padding-right: 20px;
     line-height: 1.5rem;
     position: absolute;
@@ -59,7 +61,7 @@ p {
     color: #fff;
 }
 
-#firstSection > .container >  button {
+#firstSection>.container>button {
     padding: 10px;
     margin-top: 90px;
     background-color: var(--galben);
@@ -69,39 +71,43 @@ p {
     z-index: 1;
 }
 
-#firstSection > .container > button > a {
+#firstSection>.container>button>a {
     color: #051130;
     font-weight: 550;
 }
 
-#firstSection > .container > button > h3{
+#firstSection>.container>button>h3 {
     color: #051130;
     font-size: 0.9rem;
 }
 
-#firstSection > .container > img {
-    position: absolute;
+#firstSection>.container>img {
+    margin-top: 10px;
     z-index: 0;
     height: 445px;
-    width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
 }
 
 /* A DOUA SECTIUNE */
 
 .secondSection {
+
     padding-left: 25px;
-    height: 100px;
 }
 
-.secondSection > h1 {
+.secondSection>h1 {
     color: var(--albastru);
-    padding-top: 50px;
+    padding-top: 70px;
     font-size: 1.8rem;
 }
 
-.secondSection > p {
+.secondSection>p {
     padding-top: 10px;
     color: #051130;
+    width: 90%;
 }
 
 /* ACORDEON */
@@ -111,17 +117,16 @@ p {
     font-weight: bold;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
-   rotate: 180deg;
+}
+
+.active:after {
+    rotate: 180deg;
     color: var(--albastru);
-  }
-  
+}
+
 
 .acordeonSection {
-    padding-left: 25px;
-    padding-top: 200px;
+    padding-top: 50px;
 }
 
 .acordeon {
@@ -141,7 +146,8 @@ p {
 }
 
 
-.active, .acordeon:hover {
+.active,
+.acordeon:hover {
     background-color: #0244ecc0;
 }
 
@@ -157,7 +163,7 @@ p {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-out;
-    
+
 }
 
 
@@ -181,20 +187,20 @@ p {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 40px;
-    
+
 }
 
 
-.card > h1 {
+.card>h1 {
     font-size: 1.5rem;
 }
 
-.card > p {
+.card>p {
     padding-top: 15px;
     font-size: 1.2rem;
 }
 
-.card > button {
+.card>button {
     color: var(--albastru-deschis);
     border: none;
     background: none;
@@ -205,7 +211,7 @@ p {
     outline: none;
 }
 
-.card > button > a {
+.card>button>a {
     color: var(--albastru-deschis);
 }
 
@@ -220,31 +226,32 @@ p {
     flex-direction: column;
 }
 
-.sectiuneDesen > h1 {
+.sectiuneDesen>h1 {
     font-size: 1.2rem;
     padding-top: 50px;
     text-align: center;
     color: #fff;
 }
 
-.sectiuneDesen > button {
+.sectiuneDesen>button {
     margin-top: 40px;
     padding: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     border-radius: 7px;
     background-color: #F9FC61;
     border: none;
-    width: 40%;
+
 }
 
-.sectiuneDesen > button > a {
-   
+.sectiuneDesen>button>a {
+
     font-weight: 800;
     color: var(--albastru);
 }
 
-.sectiuneDesen > img {
+.sectiuneDesen>img {
+    width: 80%;
     padding-top: 60px;
 }
 
@@ -258,33 +265,47 @@ p {
     justify-content: flex-end;
 }
 
-.sectiuneProiecte > h1 {
+.sectiuneProiecte>h1 {
     display: flex;
     justify-content: center;
     font-size: 1.6rem;
     padding-top: 30px;
 }
 
-.sectiuneProiecte > button {
+.sectiuneProiecte>button {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
 }
 
-.sectiuneProiecte > img {
+.sectiuneProiecte>img {
     padding-top: 90px;
     padding-left: 20px;
     width: 90%;
 }
 
+.containerProiecte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .chenarProiect {
+    justify-content: center;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     box-shadow: 2px 4px 8px 1px rgb(163, 160, 160);
-    height: 250px;
-    margin-left: 20px;
-    margin-right: 20px;
+    height: 550px;
+    margin-top: 100px;
+    width: 50%;
+}
+
+.chenarProiect>img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .chenarProiect h1 {
@@ -306,14 +327,14 @@ p {
     background: none;
 }
 
-.chenarProiect > button > a {
+.chenarProiect>button>a {
     font-weight: bold;
     font-size: 1rem;
     color: var(--albastru-deschis);
 }
 
 
-.sectiuneProiecte > button {
+.sectiuneProiecte>button {
     align-self: flex-end;
     display: flex;
     padding: 10px;
@@ -330,7 +351,7 @@ p {
 }
 
 
-.sectiuneProiecte > button > a {
+.sectiuneProiecte>button>a {
     color: var(--albastru-deschis);
     font-size: 1rem;
     font-weight: bold;
@@ -346,14 +367,14 @@ p {
     flex-direction: column;
 }
 
-.ultimaSectiune > h1{
+.ultimaSectiune>h1 {
     padding-top: 40px;
     font-size: 1.3rem;
     text-align: center;
     font-weight: bold;
 }
 
-.ultimaSectiune > button {
+.ultimaSectiune>button {
     display: flex;
     align-self: center;
     margin-top: 40px;
@@ -366,8 +387,156 @@ p {
     background-color: #F9FC61;
 }
 
-.ultimaSectiune > button > a {
+.ultimaSectiune>button>a {
     color: var(--albastru);
     font-size: 0.9rem;
     font-weight: bold;
+}
+
+
+/* TABLETE */
+
+@media (min-width: 768px) {
+
+    /* PRIMA SECTIUNE */
+
+
+
+
+    #firstSection>.container>h1 {
+        font-size: 2rem;
+    }
+
+    #firstSection>.container>p {
+        font-size: 1.4rem;
+    }
+
+    #firstSection>.container>button {
+        margin-top: 90px;
+        padding: 15px 50px;
+    }
+
+    #firstSection>.container>button>a {
+        color: #051130;
+        font-size: 1.1rem;
+    }
+
+
+    .secondSection>p {
+        width: 90%;
+    }
+
+
+    /* A TREIA SECTIUNE */
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-1 {
+        height: 200px;
+        width: 94.5%;
+    }
+
+    .card>img {
+        width: 15%;
+        display: flex;
+        align-self: flex-end;
+
+        padding-right: 60px;
+        position: absolute;
+    }
+
+
+
+    .card>button>a {
+        display: flex;
+    }
+
+    .card>h1 {
+        display: flex;
+        align-self: flex-start;
+    }
+
+    .card>p {
+        width: 70%;
+    }
+
+    /* A PATRA SECTIUNE DESEN */
+
+    .sectiuneDesen>h1 {
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    .sectiuneDesen>button {
+        padding: 10px;
+        padding: 15px 50px;
+    }
+
+    .sectiuneDesen>button>a {
+        font-size: 1rem;
+    }
+
+    /* SECTIUNE PROIECTE  */
+
+    .sectiuneProiecte {
+        display: flex;
+
+    }
+
+    .sectiuneProiecte>.containerProiecte>.chenarProiect>img {
+        display: flex;
+        width: 100%;
+    }
+
+    .chenarProiect>h1 {
+        width: 90%;
+    }
+
+    .chenarProiect {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 550px;
+    }
+
+    .chenarProiect p {
+        width: 90%;
+    }
+
+    .containerProiecte {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+    /* ULTIMA SECTIUNE */
+
+
+    .ultimaSectiune {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ultimaSectiune>h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        width: 32%;
+    }
+
+    .ultimaSectiune>button {
+        padding: 10px;
+        padding: 15px 50px;
+    }
+
+    .ultimaSectiune>button>a {
+        font-size: 1.2rem;
+    }
+
 }
