@@ -1,8 +1,12 @@
 * {
+    
     margin: 0;
 }
 
+
 body {
+    overflow-x: hidden;
+    
     background-color: #faf6f6;
 }
 
@@ -299,6 +303,7 @@ p {
     margin-top: 15px;
     margin-left: 15px;
     border: none;
+    background: none;
 }
 
 .chenarProiect > button > a {
@@ -321,6 +326,7 @@ p {
     border-radius: 5px;
     border-width: 2px;
     outline: none;
+    background: none;
 }
 
 
