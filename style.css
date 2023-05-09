@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #faf6f6;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --albastru-deschis: #2954C7;
+    --galben: #F9FC61;
+    --mov: #EF75FF;
+    --albastru: #051130;
+}
+
+h1 {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* PRIMA SECTIUNE */
+
+#firstSection {
+    height: 300px;
+    background-color: #051130;
+    padding: 60px 0;
+}
+
+#firstSection > .container {
+    max-width: 85%;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#firstSection > .container >  h1 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+#firstSection > .container > p {
+    padding-right: 20px;
+    line-height: 1.5rem;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+}
+
+#firstSection > .container >  button {
+    padding: 10px;
+    margin-top: 90px;
+    background-color: var(--galben);
+    border-radius: 7px;
+    border: #051130;
+    position: absolute;
+    z-index: 1;
+}
+
+#firstSection > .container > button > a {
+    color: #051130;
+    font-weight: 550;
+}
+
+#firstSection > .container > button > h3{
+    color: #051130;
+    font-size: 0.9rem;
+}
+
+#firstSection > .container > img {
+    position: absolute;
+    z-index: 0;
+    height: 445px;
+    width: 80%;
+}
+
+/* A DOUA SECTIUNE */
+
+.secondSection {
+    padding-left: 25px;
+    height: 100px;
+}
+
+.secondSection > h1 {
+    color: var(--albastru);
+    padding-top: 50px;
+    font-size: 1.8rem;
+}
+
+.secondSection > p {
+    padding-top: 10px;
+    color: #051130;
+}
+
+/* ACORDEON */
+.acordeon:after {
+    content: '\02C5';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+   rotate: 180deg;
+    color: var(--albastru);
+  }
+  
+
+.acordeonSection {
+    padding-left: 25px;
+    padding-top: 200px;
+}
+
+.acordeon {
+    color: var(--albastru);
+    padding: 18px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 18px;
+    border-radius: 1px;
+    width: 90%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    box-shadow: 2px 4px 8px 1px rgb(163, 160, 160);
+    padding-left: 25px;
+}
+
+
+.active, .acordeon:hover {
+    background-color: #0244ecc0;
+}
+
+
+
+.panel {
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    color: var(--albastru);
+    text-align: left;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    
+}
+
+
+/* CARDURI SECTIUNE */
+
+.carduriSectiune {
+    padding-top: 100px;
+    padding-left: 25px;
+}
+
+
+.card-1 {
+    width: 87%;
+    border: none;
+    outline: none;
+    box-shadow: 2px 4px 8px 1px rgb(163, 160, 160);
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 2px;
+    padding-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 40px;
+    
+}
+
+
+.card > h1 {
+    font-size: 1.5rem;
+}
+
+.card > p {
+    padding-top: 15px;
+    font-size: 1.2rem;
+}
+
+.card > button {
+    color: var(--albastru-deschis);
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 2px;
+    outline: none;
+}
+
+.card > button > a {
+    color: var(--albastru-deschis);
+}
+
+
+/* SECTIUNE DESEN */
+
+.sectiuneDesen {
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+    background-color: var(--albastru-deschis);
+    flex-direction: column;
+}
+
+.sectiuneDesen > h1 {
+    font-size: 1.2rem;
+    padding-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.sectiuneDesen > button {
+    margin-top: 40px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 7px;
+    background-color: #F9FC61;
+    border: none;
+    width: 40%;
+}
+
+.sectiuneDesen > button > a {
+   
+    font-weight: 800;
+    color: var(--albastru);
+}
+
+.sectiuneDesen > img {
+    padding-top: 60px;
+}
+
+/*  SECTIUNE PROIECTE */
+
+.sectiuneProiecte {
+    box-shadow: 2px 4px 8px 1px rgb(163, 160, 160);
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sectiuneProiecte > h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding-top: 30px;
+}
+
+.sectiuneProiecte > button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.sectiuneProiecte > img {
+    padding-top: 90px;
+    padding-left: 20px;
+    width: 90%;
+}
+
+.chenarProiect {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 8px 1px rgb(163, 160, 160);
+    height: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.chenarProiect h1 {
+    font-size: 1.2rem;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.chenarProiect p {
+    padding-top: 10px;
+    padding-left: 16px;
+    line-height: 1.3rem;
+}
+
+.chenarProiect button {
+    margin-top: 15px;
+    margin-left: 15px;
+    border: none;
+}
+
+.chenarProiect > button > a {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--albastru-deschis);
+}
+
+
+.sectiuneProiecte > button {
+    align-self: flex-end;
+    display: flex;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    background-color: none;
+    border-color: var(--albastru-deschis);
+    border-radius: 5px;
+    border-width: 2px;
+    outline: none;
+}
+
+
+.sectiuneProiecte > button > a {
+    color: var(--albastru-deschis);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: none;
+    outline: none;
+}
+
+
+/* ULTIMA SECTIUNE */
+
+.ultimaSectiune {
+    display: flex;
+    flex-direction: column;
+}
+
+.ultimaSectiune > h1{
+    padding-top: 40px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ultimaSectiune > button {
+    display: flex;
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 7px;
+    border: none;
+    background-color: #F9FC61;
+}
+
+.ultimaSectiune > button > a {
+    color: var(--albastru);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
