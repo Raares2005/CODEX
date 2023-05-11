@@ -39,6 +39,7 @@ p {
 #firstSection {
     background-color: #051130;
     padding: 60px 0;
+    margin-top: 100px;
 }
 
 #firstSection>.container {
@@ -52,6 +53,8 @@ p {
     padding-bottom: 15px;
     font-size: 1.3rem;
     color: #fff;
+    z-index: 11;
+    position: relative;
 }
 
 #firstSection>.container>p {
@@ -369,6 +372,7 @@ p {
     margin-top: 30px;
     margin-right: 56px;
     background-color: none;
+    border: solid;
     border-color: var(--albastru-deschis);
     border-radius: 5px;
     border-width: 2px;
@@ -463,13 +467,13 @@ p {
     }
 
     .card-1,.card-2 {
-        height: 200px;
+        height: 300px;
         padding-bottom: 40px;
         
     }
 
     .card>img {
-        width: 15%;
+        width: 20%;
         display: flex;
         align-self: flex-end;
 
@@ -671,7 +675,7 @@ p {
     }
 
     .containerCarduri div {
-        height: 200px;
+        height: 320px;
     }
 
     /* CARD 1 */ 
@@ -688,7 +692,7 @@ p {
     
     .card-1>.card>h1 {
         font-size: 1.8rem;
-        padding-top: 20px;
+        padding-top: 80px;
     }
 
     .card-1>.card>p {
@@ -746,7 +750,7 @@ p {
     .card-3>.card>img {
         position: absolute;
         padding-right: 129px;
-        width: 12%;
+        width: 20%;
     }
 
     .card-3>.card>h1 {
@@ -820,7 +824,7 @@ p {
     }
 
     .chenarProiect {
-        height: 640px;
+        height: 680px;
     }
 
     .chenarProiect>h1 {
@@ -840,6 +844,7 @@ p {
     .sectiuneProiecte>button {
         padding: 13px;
     }
+
 
     .ultimaSectiune>h1 {
         width: 65%;
