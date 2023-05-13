@@ -34,6 +34,10 @@ p {
 
 /* TITLURI */
 
+.sectiuneProiecte {
+    padding-top: 100px;
+}
+
 .sectiuneProiecte>h1 {
     font-size: 36px;
     width: 90%;
@@ -47,7 +51,6 @@ p {
     font-size: 1.6rem;
     font-weight: bold;
     padding-left: 45px;
-    padding-top: 100px;
 }
 
 .sectiuneProiecte>.containerProiecte>.chenarProiect > .desen {
@@ -73,7 +76,7 @@ p {
 .sectiuneProiecte {
     display: flex;
     align-items: center;
-    margin-top: 0px;
+    
     justify-content: center;
 }
 
@@ -177,3 +180,8 @@ p {
 
 
 }
+
+
+
+/* PORTOFOLIU  */
+
