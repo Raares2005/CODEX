@@ -60,11 +60,13 @@ p {
 .sectiuneProiecte {
     display: flex;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 50px;
     justify-content: center;
 }
 
-
+.overlay-menu {
+    margin-top: 100px;
+}
 
 .containerProiecte {
     width: 100%;
@@ -73,7 +75,7 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     align-items:  flex-start;
-    padding: 50px;
+    padding: 12px;
 }
 
 .instagram {
@@ -91,7 +93,8 @@ p {
 }
 
 .containerProiecte>.instagram>h1 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
+    width: 100%;
         padding: 20px;
 }
 
@@ -100,7 +103,7 @@ p {
     align-self: flex-start;
     width: 105px;
     padding: 10px;
-    padding-left: 50px;
+    margin-left: 50px;
     padding-bottom: 40px;
 }
 
@@ -109,7 +112,7 @@ p {
     align-self: flex-start;
     width: 105px;
     padding: 10px;
-    padding-left: 50px;
+    margin-left: 50px;
 }
 
 
@@ -152,7 +155,7 @@ p {
         align-self: flex-start;
         width: 105px;
         padding: 10px;
-        padding-left: 50px;
+        margin-left: 50px;
         padding-bottom: 40px;
     }
 
@@ -161,7 +164,7 @@ p {
         align-self: flex-start;
         width: 105px;
         padding: 10px;
-        padding-left: 50px;
+        margin-left: 50px;
     }
     
 
@@ -173,6 +176,24 @@ p {
 
 
 @media (min-width: 1281px) {
+
+
+    .containerProiecte>.gmail>img {
+        display: flex;
+        align-self: flex-start;
+        width: 105px;
+        padding: 10px;
+        margin-left: 50px;
+        padding-bottom: 40px;
+    }
+
+    .containerProiecte>.instagram>img {
+        display: flex;
+        align-self: flex-start;
+        width: 105px;
+        padding: 10px;
+        margin-left: 50px;
+    }
 
     .sectiuneProiecte> .desen {
         padding-top: 0px;
@@ -191,7 +212,7 @@ p {
     }
 
     .containerProiecte {
-        width: 92%;
+        width: 95%;
 
     }
     
