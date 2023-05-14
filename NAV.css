@@ -103,20 +103,15 @@ li.nav-item>a {
   align-self: center;
 }
 
-.logo {
+.logo > img {
   align-self: flex-start;
   display: flex;
+  width: 100px;
 }
 
 .iteme {
   width: 50%;
 }
-
-
-.logo-icon {
-  width: 100px;
-}
-
 
 
 .navbar-nav {
@@ -180,7 +175,7 @@ li.nav-item>a {
 
   .logo {
       width: 10%;
-      padding-left: 60px;
+      padding-left: 30px;
   }
 
 
@@ -258,7 +253,7 @@ li.nav-item>a {
   #containerBurgerStuff {
       font-size: 2.5rem;
       padding-top: 150px;
-      padding-left: 40px;
+      
       padding-bottom: 10px;
       display: none;
       width: 100%;
@@ -297,7 +292,8 @@ li.nav-item>a {
       display: flex;
       flex-direction: row;
       list-style: none;
-      justify-content: center;
+      justify-content: flex-start;
+      padding-left: 10px;
 
   }
 
@@ -307,6 +303,8 @@ li.nav-item>a {
       display: flex;
       justify-content: space-between;
   }
+
+  
 
   .burgerNav>li>a>button {
       font-weight: 600;
@@ -329,130 +327,7 @@ li.nav-item>a {
 
   }
 
-
-  li.burgerItem>#serviciiHeaderBurger {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-  }
-
-  li.burgerItem>#serviciiHeaderBurger>#btnBurgerDropdownContainer {
-      width: 15px;
-      height: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.3s ease-in;
-  }
-
-  li.burgerItem>#serviciiHeaderBurger>#btnBurgerDropdownContainer>#btnBurgerDropdown {
-      display: hidden;
-      width: 1px;
-      height: 15px;
-  }
-
-  li.burgerItem>#serviciiHeaderBurger>#btnBurgerDropdownContainer:hover {
-      cursor: pointer;
-  }
-
-  li.burgerItem>#serviciiHeaderBurger>#btnBurgerDropdownContainer.pressed {
-      rotate: 180deg;
-  }
-
-  li.burgerItem>#serviciiHeaderBurger>#btnBurgerDropdownContainer>#btnBurgerDropdown::before {
-      content: "";
-      position: absolute;
-      height: 10px;
-      width: 1px;
-      background-color: rgb(0, 0, 0);
-      transform: translate(-4.5px);
-      rotate: -45.5deg;
-  }
-
-  li.burgerItem>#serviciiHeaderBurger>#btnBurgerDropdownContainer>#btnBurgerDropdown::after {
-      content: "";
-      position: absolute;
-      height: 10px;
-      width: 1px;
-      background-color: rgb(0, 0, 0);
-      transform: translateX(4.5px);
-      rotate: 45.5deg;
-  }
-
-  li.burgerItem>#serviciiLinksBurger {
-      position: relative;
-      overflow: hidden;
-      max-height: 0;
-      transition: 0.3s ease-in;
-      padding-left: 10px;
-      font-size: smaller;
-  }
-
-  li.burgerItem>#serviciiLinksBurger>a {
-      padding: 5px 0;
-  }
-
-  li.burgerItem>#serviciiLinksBurger>a:hover {
-      color: --hoverColor;
-  }
-
-  #burgerContactBtn {
-      width: 45%;
-  }
-
-  button.burgerItem {
-      background-color: #4CCE8E;
-      padding: 10px 30px;
-      border-radius: 15px;
-      border: solid #4CCE8E;
-      font-size: 1rem;
-  }
-
-  .txtContact p {
-      display: none;
-      justify-content: space-between;
-      width: 45%;
-  }
-
-
-  #phoneNumber>img {
-      display: none;
-  }
-
-  #phoneNumber>a {
-      display: none;
-  }
-
-  #burgerLogo {
-      width: 90%;
-      margin: 0 auto;
-  }
-
-  #logoIconBurger {
-      width: 25%;
-      height: auto;
-  }
-
-  #burgerLogoText {
-      width: 75%;
-  }
-
-  #burgerLogoText>h1 {
-      font-size: 1.2rem;
-      width: 100%;
-      text-align: center;
-  }
-
-  #burgerLogoText>h4 {
-      font-size: 0.9rem;
-      text-align: center;
-  }
-
-  footer {
-      margin-top: 19%;
-  }
 }
-
 @media screen and (max-width: 850px) {}
 
 
