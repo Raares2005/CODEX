@@ -169,6 +169,16 @@ li.nav-item>a {
 
 @media screen and (max-width: 820px) {
 
+  
+
+  .desenOverlay {
+    width: 807px;
+    position: relative;
+    display: flex;
+    align-self: flex-start;
+  }
+
+
   .container-nav {
       display: flex;
       align-items: center;
@@ -271,10 +281,7 @@ li.nav-item>a {
       position: absolute;
       width: 100%;
       max-width: none;
-      height: 100vh;
-      ;
       color: #fff;
-
       z-index: 12;
       transition: right 0.3s cubic-bezier(0.82, 0.085, 0.395, 0.895);
       font-size: 1.2rem;
@@ -322,14 +329,6 @@ li.nav-item>a {
       margin-bottom: 30px;
   }
 
-
-  .desenOverlay {
-        position: absolute;
-        bottom: 0;
-        width: 500px;
-        left: 160%;
-        
-  }
 
 }
 @media screen and (max-width: 850px) {}
@@ -417,9 +416,7 @@ li.nav-item>a {
     border: none;
 }
 
-#containerLogoBurger.open #burgerLine {
-    background: #fff;
-}
+
 
 #containerLogoBurger.open #burgerLine::before {
     transform: rotate(-45deg);
@@ -445,7 +442,6 @@ li.nav-item>a {
     position: absolute;
     width: 100%;
     max-width: none;
-    height: 100vh;
     color: #fff;
     z-index: 12;
     transition: right 0.3s cubic-bezier(0.82, 0.085, 0.395, 0.895);
@@ -495,14 +491,8 @@ li.nav-item>a {
     margin-bottom: 30px;
 }
 
+ 
 
-.desenOverlay {
-      position: absolute;
-      bottom: 0;
-      width: 500px;
-      left: 160%;
-      
-}
 
 }
 
