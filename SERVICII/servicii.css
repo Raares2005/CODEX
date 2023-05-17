@@ -1,0 +1,87 @@
+/* 
+General Stuff
+*/
+
+:root {
+  --albastru-deschis: #2954C7;
+  --galben: #F9FC61;
+  --mov: #EF75FF;
+  --albastru: #051130;
+  --white: #FAF6F6;
+}
+
+* {
+  border-style: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 
+S: I
+*/
+
+#section-1 {
+  display: flex;
+  flex-direction: column;
+ 
+  height: auto;
+  max-width: 100vw;
+  background-color: var(--albastru);
+  padding: 2%;
+}
+
+#section-1 * {
+  margin: 10px 0;
+}
+
+#section-1 h1 {
+  font-size: 1.15em;
+  color: var(--galben);
+}
+
+#section-1 h2 {
+  font-size: 1.50em;
+  color:var(--white);
+}
+
+#section-1 p {
+  font-size: 1.25em;
+  color: var(--white);
+}
+
+#section-1 #section-1_afla-mai-multe-btn--link {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+}
+
+#section-1 #section-1_afla-mai-multe-btn--link button{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #F9FC61;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Nunito', sans-serif;
+}
+
+#section-1 img {
+  align-self: center;
+  width: 75%;
+}
+
+/* 
+S: II
+*/
