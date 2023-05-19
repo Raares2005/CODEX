@@ -143,6 +143,14 @@ S: II & III
   font-size: 1.25em;
 }
 
+.card .txtSpacer h2 {
+  font-size: 1.5em;
+}
+
+.card .txtSpacer p {
+  font-size: 1.25em;
+}
+
 
 @media  (min-width: 768px) {
   #section-1 {
@@ -160,11 +168,11 @@ S: II & III
       max-width: 45%;
   }
 
-  .card h2 {
+  .card .txtSpacer h2 {
     font-size: 1.75em;
   }
   
-  .card p {
+  .card .txtSpacer p {
     font-size: 1.5em;
   }
 
@@ -209,15 +217,50 @@ S: II & III
     margin: 15px auto;
   }
 
-  .card h2 {
+  .card .txtSpacer h2 {
     font-size: 2em;
   }
   
-  .card p {
+  .card .txtSpacer p {
     font-size: 1.75em;
   }
 
   #section-3_img {
     max-width: 500px;
   }
+
+  #first3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #first3 .card, #last3 .card {
+    margin: 0 10px;
+    
+  }
+
+  .card img{
+    width: 75px;
+    height: 75px;
+  }
+
+  #last3 {
+    display: flex;
+    flex-direction: row;
+  }
+  #last3 .card {
+    margin: 0 10px;
+  }
+
+.txtSpacer {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card.has-bg {
+  width: 50%;
+}
+
 }
