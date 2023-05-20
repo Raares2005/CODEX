@@ -4,29 +4,86 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="servicii.css">
+  <link rel="stylesheet" href="../NAV.css">
   <title>CODEX | Servicii</title>
 </head>
 <body>
+
+  <nav>
+    <div class="container-nav">
+        <a href="index.html">
+            <div class="logo">
+                <img src="../img/logo CODEXlogo CODEX (1).svg" logo-icon">
+            </div>
+        </a>
+        <div class="iteme">
+            <ul class="navbar-nav ">
+                <li class="nav-item"><a href="#">Despre noi</a></li>
+                <li class="nav-item"><a href="#">Servicii</a></li>
+                <li class="nav-item"><a href="PORTOFOLIU/portofoliu.html">Portofoliu</a></li>
+                <li class="nav-item button">
+                    <a href="CONTACT/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div id="containerLogoBurger">
+            <span id="burgerLine"> </span>
+        </div>
+    </div>
+    <div id="burgerListContainer">
+        <div id="containerBurgerStuff">
+            <div id="burgerLinks">
+                <ul class="burgerNav" id="burgerNav">
+                    <li class="burgerItem"><a href="#">Despre Noi</a> </li>
+                    <li class="burgerItem"> <a href="#">Servicii</a></li>
+                    <li class="burgerItem"><a href="PORTOFOLIU/portofoliu.html">Portofoliu</a></li>
+                    <li class="burgerItem">
+                        <a href="../CODEX/CONTACT/contact.html"><button>Contact</button></a>
+                    </li>
+                    <ul class="containerPozeOverlay">
+                        <li> <a href="CONTACT/contact.html"">
+                            <img src=" img/INSTAGRAM LOGO FOOTER (1).png" alt=""></a></li>
+                        <li> <a href="CONTACT/contact.html">
+                                <img src="img/MAIL LOGO FOOTER (1).png" alt="">
+                            </a></li>
+                    </ul>
+
+                </ul>
+            </div>
+            <div id="burgerDesen">
+                <img class="desenOverlay" src="img/Group 33desenOverlay (1).svg" alt="dsd">
+            </div>
+
+
+        </div>
+    </div>
+    <div id="backdrop"></div>
+</nav>
+
   <div id="main-content">
     <section id="section-1">
-      <div id="section-1__content">
-        <div id="section-1__text-content">
-          <h1>Servicii</h1>
-          <h2>Transformă-ți afacerea online cu serviciile noastre de dezvoltare web profesionale!</h2>
-          <p>Echipa noastră este dedicată și apreciem transparența și comunicarea deschisă cu clienții noștri, astfel încât să putem oferi întotdeauna servicii personalizate și adaptate la nevoile lor specifice. </p>
-          <a id="section-1_afla-mai-multe-btn--link" href="#">
-            <button>Afla Mai Multe</button>
-          </a>
-        </div>
-        <img src="imaginiServicii/sectiune1-telefon.png" alt="Femeie care prezinta servicii." id="section-1_img">
-      </div>
+      <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+    <main class="scene"></main>
+    <div id="section-1__content">
+      <h1>Servicii</h1>
+      <h2>Transformă-ți afacerea online cu serviciile noastre de dezvoltare web profesionale!</h2>
+      <p>Echipa noastră este dedicată și apreciem transparența și comunicarea deschisă cu clienții noștri, astfel încât să putem oferi întotdeauna servicii personalizate și adaptate la nevoile lor specifice. </p>
+      <a id="section-1_afla-mai-multe-btn--link" href="#">
+        <button>Afla Mai Multe</button>
+      </a>
+    </div>
+       
     </section>
     
     <section id="section-2">
       <div id="section-2_card-1" class="card section-2_card has-bg">
-        <h1> Web Development</h1>
+        <h2> Web Development</h2>
         <p>If you can dream it, we can do it. Our expert teams work with businesses of all sizes to create high-performing, customized technology solutions.</p>
       </div>
   
@@ -43,20 +100,22 @@
         <p>Website performance isn’t just about speed. It’s about user experience, conversions, and keeping customers engaged. Our performance optimizations can improve engagement and help grow your business.</p>
       </div>
   
-      <div id="first3">
-        <div id="section-2_card-4" class="card section-2_card">
-          <img src="imaginiServicii/sectiune-2-campanii.png" alt="iconita sectiunea 2 card 4 - grafic in crestere" id="section-2_card-4_img" class="card_img">
-          <div class="txtSpacer">
-            <h2>Promovarea Website-ului prin Campanii</h2>
-            <p>Scopul principal este de a creste vizibilitatea site-ului, de a atrage trafic relevant si de a creste numarul de conversii sau vanzari.</p>
+      
+        <div class="firstTWO">
+          <div id="section-2_card-4" class="card section-2_card">
+            <img src="imaginiServicii/sectiune-2-campanii.png" alt="iconita sectiunea 2 card 4 - grafic in crestere" id="section-2_card-4_img" class="card_img">
+            <div class="txtSpacer">
+              <h2>Promovarea Website-ului prin Campanii</h2>
+              <p>Scopul principal este de a creste vizibilitatea site-ului, de a atrage trafic relevant si de a creste numarul de conversii sau vanzari.</p>
+            </div>
           </div>
-        </div>
-    
-        <div id="section-2_card-5" class="card section-2_card">
-          <img src="imaginiServicii/sectiune-2-racheta.png" alt="iconita sectiunea 2 card 5 - racheta" id="section-2_card-5_img" class="card_img">
-          <div class="txtSpacer">
-            <h2>Viteza Paginilor & Recomandari</h2>
-            <p>40% of users will leave a site if it takes more than 3 seconds to load. Our team will create a lightning fast site that keeps users engaged.</p>
+      
+          <div id="section-2_card-5" class="card section-2_card">
+            <img src="imaginiServicii/sectiune-2-racheta.png" alt="iconita sectiunea 2 card 5 - racheta" id="section-2_card-5_img" class="card_img">
+            <div class="txtSpacer">
+              <h2>Viteza Paginilor & Recomandari</h2>
+              <p>40% of users will leave a site if it takes more than 3 seconds to load. Our team will create a lightning fast site that keeps users engaged.</p>
+            </div>
           </div>
         </div>
     
@@ -67,7 +126,6 @@
             <p>Performance and page speed play an integral role in discoverability through search. Improve your site and improve your traffic.</p>
           </div>
         </div>
-      </div>
   
     </section>
   
@@ -80,20 +138,22 @@
         <p>You invested time and money into your platform. Don’t let that investment go to waste. Take a proactive approach to keep your platform performing at its peak.</p>
       </div>
   
-      <div id="last3">
-        <div id="section-3_card-2" class="card section-3_card">
-          <img src="imaginiServicii/section-3-suport.png" alt="iconita sectiunea 3 card 2 - imagine mesaje" id="section-3_card-2_img" class="card_img">
-          <div class="txtSpacer">
-            <h2>Support & Management</h2>
-            <p>Whether you're looking to improve your operational efficiency, increase profitability, or enhance customer satisfaction, our management and support service can help you get there.</p>
+      
+        <div class="firstTWO">
+          <div id="section-3_card-2" class="card section-3_card">
+            <img src="imaginiServicii/section-3-suport.png" alt="iconita sectiunea 3 card 2 - imagine mesaje" id="section-3_card-2_img" class="card_img">
+            <div class="txtSpacer">
+              <h2>Support & Management</h2>
+              <p>Whether you're looking to improve your operational efficiency, increase profitability, or enhance customer satisfaction, our management and support service can help you get there.</p>
+            </div>
           </div>
-        </div>
-    
-        <div id="section-3_card-3" class="card section-3_card">
-          <img src="imaginiServicii/section-3-monitorizata.png" alt="iconita sectiunea 3 card 3 - monitor cu grafic crescator" id="section-3_card-3_img" class="card_img">
-          <div class="txtSpacer">
-            <h2>Performanta Monitorizata</h2>
-            <p>Everything you do to your site will impact its speed. Let us monitor your site for performance dips and fix them as they arise.</p>
+      
+          <div id="section-3_card-3" class="card section-3_card">
+            <img src="imaginiServicii/section-3-monitorizata.png" alt="iconita sectiunea 3 card 3 - monitor cu grafic crescator" id="section-3_card-3_img" class="card_img">
+            <div class="txtSpacer">
+              <h2>Performanta Monitorizata</h2>
+              <p>Everything you do to your site will impact its speed. Let us monitor your site for performance dips and fix them as they arise.</p>
+            </div>
           </div>
         </div>
     
@@ -104,15 +164,39 @@
             <p>Bloated code is slow code. Our experts will continuously help slim down your site to make it perform better for you and your users.</p>
           </div>
         </div>
-      </div>
-  
       <!-- Test -->
   
     </section>
   </div>
+
+  <footer>
+    <ul>
+        <li>
+            <img class="codexFooter" src="img/logo CODEXlogo CODEX (1).svg" alt="">
+        </li>
+        <li><a href="index.html">Despre Noi</a></li>
+        <li><a href="#">Servicii</a></li>
+        <li><a href="PORTOFOLIU/portofoliu.html">Portofoliu</a></li>
+        <li><button><a href="CONTACT/contact.html">Contact</a></li></button>
+        <div class="containerPozeFooter">
+
+            <a href="CONTACT/contact.html">
+                <img src="img/INSTAGRAM LOGO FOOTER (1).png" alt="">
+            </a>
+
+
+            <a href="CONTACT/contact.html">
+                <img src="img/MAIL LOGO FOOTER (1).png" alt="">
+            </a>
+
+        </div>
+        <p>@ 2023 CODEX.ro Toate Drepturile sunt rezervate.</p>
+    </ul>
+</footer>
   
 
   <script src="servicii-script.js"></script>
+  <script src="../NAV.js"></script>
 
 </body>
 </html>
