@@ -101,6 +101,15 @@ p {
     margin-top: 20px;
 }
 
+.chenarProiect>.boxShadow>button:hover  {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.chenarProiect>.boxShadow>button:hover::after {
+    transform: scaleX(1) scaleY(1);
+    opacity: 0;
+}
 
 
 .chenarProiect>.boxShadow>img {
@@ -114,6 +123,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 200px;
 }
 
 
@@ -145,8 +155,6 @@ p {
         margin-bottom: 250px;
         box-shadow: none;
     }
-
-
 }
 
 
