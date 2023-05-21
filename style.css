@@ -341,6 +341,7 @@ p {
 .sectiuneProiecte {
     box-shadow: 2px 4px 8px 1px rgb(163, 160, 160);
     margin-top: 85px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
