@@ -122,14 +122,20 @@ p {
 
 @media (min-width: 768px) {
 
-    .sectiuneProiecte>p {
-        padding-top: 100px;
-        padding-left: 335px;
-    }
-
     .sectiuneProiecte>h1 {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
         width: 80%;
+        text-align: center;
+    }
+    
+    .sectiuneProiecte>p {
+        color: var(--albastru-deschis);
+        display: flex;
+        align-self: flex-start;
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding-left: 12%;
+        
     }
 
     .chenarProiect {

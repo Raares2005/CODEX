@@ -13,6 +13,7 @@ body {
 }
 
 a {
+    
     text-decoration: none;
 }
 
@@ -32,9 +33,6 @@ h1 {
 p {
     font-family: 'Roboto', sans-serif;
 }
-
-
-
 
 /* PRIMA SECTIUNE */
 
@@ -60,6 +58,8 @@ p {
 }
 
 #firstSection>.container>p {
+    font-size: 1.1rem;
+    width: 90%;
     padding-right: 20px;
     line-height: 1.5rem;
     position: absolute;
@@ -67,20 +67,34 @@ p {
     color: #fff;
 }
 
-#firstSection>.container>button {
-    padding: 10px;
+#firstSection>.container> a > button {
+    padding: 15px;
     margin-top: 90px;
     background-color: var(--galben);
     border-radius: 7px;
     border: #051130;
     position: absolute;
     z-index: 1;
+    animation: moveInBottom 1.2s ease-out;
 }
 
-#firstSection>.container>button>a {
+#firstSection>.container> a > button:hover  {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#firstSection>.container> a > button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+#firstSection>.container>a > button {
     color: #051130;
     font-weight: 550;
+    font-size: 1rem;
 }
+
 
 #firstSection>.container>button>h3 {
     color: #051130;
@@ -222,6 +236,7 @@ p {
 }
 
 .card>button {
+    animation: moveInBottom 1.2s ease-out;
     color: var(--albastru-deschis);
     border: none;
     background: none;
@@ -234,6 +249,16 @@ p {
 
 .card>button>a {
     color: var(--albastru-deschis);
+}
+
+.card>button>a:hover  {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card>button>a:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
 
 
@@ -251,6 +276,7 @@ p {
 .containerDesen {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .sectiuneDesen>.containerDesen>h1 {
@@ -263,7 +289,7 @@ p {
     align-self: center;
 }
 
-.sectiuneDesen>.containerDesen>button {
+.sectiuneDesen>.containerDesen> a >button {
     margin-top: 40px;
     padding: 15px;
     padding-left: 40px;
@@ -273,13 +299,28 @@ p {
     border: none;
     align-self: center;
     justify-content: center;
-
+    animation: moveInBottom 1.2s ease-out;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--albastru);
+    display: flex;
+    align-self: center;
 }
 
-.sectiuneDesen>.containerDesen>button>a {
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: var(--albastru);
+.sectiuneDesen>.containerDesen> a {
+   position: relative;
+}
+
+
+.sectiuneDesen>.containerDesen> a >button:hover  {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sectiuneDesen>.containerDesen> a >button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
 
 .sectiuneDesen>img {
@@ -295,6 +336,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .sectiuneProiecte>h1 {
@@ -304,7 +346,7 @@ p {
     padding-top: 30px;
 }
 
-.sectiuneProiecte>button {
+.sectiuneProiecte> a > button {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
@@ -324,6 +366,7 @@ p {
 }
 
 .chenarProiect {
+    animation: moveInBottom 1.2s ease-out;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -367,7 +410,17 @@ p {
 }
 
 
-.sectiuneProiecte>button {
+.chenarProiect button:hover  {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.chenarProiect button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.sectiuneProiecte> a >button {
     align-self: flex-end;
     display: flex;
     padding: 10px;
@@ -385,7 +438,7 @@ p {
 }
 
 
-.sectiuneProiecte>button>a {
+.sectiuneProiecte> a > button {
     color: var(--albastru-deschis);
     font-size: 1rem;
     font-weight: bold;
@@ -393,12 +446,28 @@ p {
     outline: none;
 }
 
+.sectiuneProiecte> a >button:hover  {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sectiuneProiecte> a >button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.sectiuneProiecte > a {
+    position: relative;
+}
 
 /* ULTIMA SECTIUNE */
 
 .ultimaSectiune {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 300px;
 }
 
 .ultimaSectiune>h1 {
@@ -411,14 +480,12 @@ p {
     font-size: 2rem;
     width: 82%;
     align-self: center;
-
 }
 
-.ultimaSectiune>button {
+.ultimaSectiune> a > button {
     display: flex;
     align-self: center;
     margin-top: 40px;
-    margin-bottom: 20px;
     padding: 15px;
     padding-left: 20px;
     padding-right: 20px;
@@ -427,10 +494,25 @@ p {
     background-color: #F9FC61;
 }
 
-.ultimaSectiune>button>a {
+.ultimaSectiune>a>button {
     color: var(--albastru);
     font-size: 0.9rem;
     font-weight: bold;
+}
+
+.ultimaSectiune>a {
+    position: relative;
+}
+
+.ultimaSectiune> a > button:hover  {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.ultimaSectiune> a > button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
 
 
@@ -446,14 +528,15 @@ p {
 
     #firstSection>.container>p {
         font-size: 1.4rem;
+        width: 60%;
     }
 
-    #firstSection>.container>button {
+    #firstSection>.container> a > button {
         margin-top: 90px;
         padding: 15px 50px;
     }
 
-    #firstSection>.container>button>a {
+    #firstSection>.container> a > button {
         color: #051130;
         font-size: 1.1rem;
     }
@@ -610,8 +693,26 @@ p {
     }
 
     #firstSection>.container>p {
-        width: 25%;
+        width: 30%;
         font-size: 1.2rem;
+    }
+
+    #firstSection>.container> a > button {
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 90px;
+        background-color: var(--galben);
+        border-radius: 7px;
+        border: #051130;
+        position: absolute;
+        z-index: 1;
+    }
+
+    #firstSection>.container>a > button {
+        color: #051130;
+        font-weight: 550;
+        font-size: 1rem;
     }
 
     /* A DOUA SECTIUNE */
@@ -706,7 +807,7 @@ p {
 
     .card-1>.card>img {
         width: 8%;
-        padding-top: 50px;
+        padding-top: 94px;
     }
 
     .card-1>.card>button>a {
@@ -852,6 +953,13 @@ p {
     }
 
 
+    .ultimaSectiune > a > button {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    
+
     .ultimaSectiune>h1 {
         width: 65%;
         font-size: 2.5rem;
@@ -867,7 +975,7 @@ footer {
     justify-content: center;
     display: flex;
     background-color: var(--albastru);
-    padding-top: 60px;
+    
 }
 
 footer  .codexFooter {
@@ -928,6 +1036,7 @@ footer p {
     font-size: 1.8rem;
     font-weight: bold;
     padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -1526,5 +1635,18 @@ footer p {
 
     to {
         transform: translateX(2000px);
+    }
+}
+
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
