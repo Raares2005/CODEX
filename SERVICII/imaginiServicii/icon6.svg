@@ -1,0 +1,15 @@
+<svg width="96" height="108" viewBox="0 0 96 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M88 2.51953V55.7477H2V2.51953H88Z" stroke="#2954C7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.1465 48.2314H79.8285" stroke="#2954C7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M53.0191 55.748V68.3785H36.9805V55.748H53.0191Z" stroke="#2954C7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M53.0191 62.4492H57.8584L61.5915 77.0128H28.4082L31.8648 62.4492H36.5658" stroke="#2954C7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M50.9317 55.7064C50.9373 56.4355 50.7872 57.1584 50.4904 57.8329C50.1935 58.5075 49.7558 59.1203 49.2026 59.6357C48.6493 60.1512 47.9917 60.5589 47.2679 60.8353C46.5441 61.1117 45.7685 61.2512 44.9864 61.2456C41.668 61.2456 39.041 58.9271 39.041 55.7051" stroke="#2954C7" stroke-width="4"/>
+<path d="M13.4766 41.8275L25.6438 30.4859L34.9074 37.7033L45.0007 27.9083L53.02 33.9657L75.4187 13.0869" stroke="#2954C7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="21.3212" cy="24.3938" rx="21.3212" ry="24.3938" transform="matrix(-0.50875 0.860914 -0.868198 -0.496218 95.0518 71.21)" fill="url(#paint0_linear_428_7)"/>
+<defs>
+<linearGradient id="paint0_linear_428_7" x1="21.3213" y1="4.45148e-07" x2="13.7364" y2="46.1174" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFFB75"/>
+<stop offset="0.791667" stop-color="#FAF8B8" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
