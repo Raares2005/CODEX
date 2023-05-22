@@ -34,7 +34,7 @@ S: I
   margin-top: 100px;
   padding: 5%;
   background-color: var(--albastru);
-  background-image: url(imaginiServicii/sectiune1-telefon.png);
+  background-image: url(imaginiServicii/img1.svg);
   background-repeat: no-repeat;
   background-position:bottom;
 }
@@ -171,8 +171,8 @@ S: II & III
 }
 
 .card img{
-  width: 100px;
-  height: auto;
+  width: auto;
+  height: 100px;
 }
 
 .card .txtSpacer h2 {
@@ -219,11 +219,11 @@ S: II & III
   }
 
   .card .txtSpacer h2 {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
   
   .card .txtSpacer p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
 }
@@ -273,20 +273,21 @@ S: II & III
     margin: 15px auto;
   }
 
+
   .card h2 {
-    font-size: 2em;
+    font-size: 1.75em;
   }
   
   .card p {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 
   .card .txtSpacer h2 {
-    font-size: 2em;
+    font-size: 1.75em;
   }
   
   .card .txtSpacer p {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 
   #section-3_img {
