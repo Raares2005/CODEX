@@ -1,84 +1,128 @@
-jQuery(document).ready(function ($) {
-	var feedbackSlider = $(".feedback-slider");
-	feedbackSlider.owlCarousel({
-		items: 1,
-		nav: true,
-		dots: true,
-		autoplay: true,
-		loop: true,
-		mouseDrag: true,
-		touchDrag: true,
-		navText: [
-			"<i class='fa fa-long-arrow-left'></i>",
-			"<i class='fa fa-long-arrow-right'></i>"
-		],
-		responsive: {
-			// breakpoint from 767 up
-			767: {
-				nav: true,
-				dots: false
-			}
-		}
-	});
+document.addEventListener('DOMContentLoaded', function() {
+    
+  const carousels = document.querySelectorAll('.carousel');
+  carousels.forEach(function( carousel ) {
 
-	feedbackSlider.on("translate.owl.carousel", function () {
-		$(".feedback-slider-item h3")
-			.removeClass("animated fadeIn")
-			.css("opacity", "0");
-		$(".feedback-slider-item img, .feedback-slider-thumb img, .customer-rating")
-			.removeClass("animated zoomIn")
-			.css("opacity", "0");
-	});
+      const ele = carousel.querySelector('ul');
+      const amountvisible = Math.round(ele.offsetWidth/ele.querySelector('li:nth-child(1)').offsetWidth);
+      const bullets = carousel.querySelectorAll('ol li');
+      const slides = carousel.querySelectorAll('ul li');
+      const nextarrow = carousel.querySelector('.next');
+      const prevarrow = carousel.querySelector('.prev');
 
-	feedbackSlider.on("translated.owl.carousel", function () {
-		$(".feedback-slider-item h3").addClass("animated fadeIn").css("opacity", "1");
-		$(".feedback-slider-item img, .feedback-slider-thumb img, .customer-rating")
-			.addClass("animated zoomIn")
-			.css("opacity", "1");
-	});
-	feedbackSlider.on("changed.owl.carousel", function (property) {
-		var current = property.item.index;
-		var prevThumb = $(property.target)
-			.find(".owl-item")
-			.eq(current)
-			.prev()
-			.find("img")
-			.attr("src");
-		var nextThumb = $(property.target)
-			.find(".owl-item")
-			.eq(current)
-			.next()
-			.find("img")
-			.attr("src");
-		var prevRating = $(property.target)
-			.find(".owl-item")
-			.eq(current)
-			.prev()
-			.find("span")
-			.attr("data-rating");
-		var nextRating = $(property.target)
-			.find(".owl-item")
-			.eq(current)
-			.next()
-			.find("span")
-			.attr("data-rating");
-		$(".thumb-prev").find("img").attr("src", prevThumb);
-		$(".thumb-next").find("img").attr("src", nextThumb);
-		$(".thumb-prev")
-			.find("span")
-			.next()
-			.html(prevRating + '<i class="fa fa-star"></i>');
-		$(".thumb-next")
-			.find("span")
-			.next()
-			.html(nextRating + '<i class="fa fa-star"></i>');
-	});
-	$(".thumb-next").on("click", function () {
-		feedbackSlider.trigger("next.owl.carousel", [300]);
-		return false;
-	});
-	$(".thumb-prev").on("click", function () {
-		feedbackSlider.trigger("prev.owl.carousel", [300]);
-		return false;
-	});
-}); //end ready
+      // Initialize the carousel
+      nextarrow.style.display = 'block';
+      prevarrow.style.display = 'block';
+      ele.scrollLeft = 0;
+      bullets[0].classList.add('selected');
+      slides[0].classList.add('selected');
+      if(amountvisible>1) {
+        var removeels = carousel.querySelectorAll('ol li:nth-last-child(-n + '+(amountvisible-1)+')');
+        removeels.forEach(function(removeel) {
+          removeel.remove();
+        });
+      }
+
+      const setSelected = function() {
+          bullets.forEach(function(bullet) {
+             bullet.classList.remove('selected');
+          });
+          slides.forEach(function(slide) {
+             slide.classList.remove('selected');
+          });
+          const scrolllength = carousel.querySelector('ul li:nth-child(2)').offsetLeft - carousel.querySelector('ul li:nth-child(1)').offsetLeft;
+          const nthchild = (Math.round((ele.scrollLeft/scrolllength)+1));
+          carousel.querySelector('ol li:nth-child('+nthchild+')').classList.add('selected'); 
+          carousel.querySelector('ul li:nth-child('+nthchild+')').classList.add('selected'); 
+          if(carousel.parentElement.parentElement.querySelector('.dynamictitle')) {
+              const title = carousel.querySelector('ul li:nth-child('+nthchild+') img').getAttribute('title'); 
+              if(title) carousel.parentElement.parentElement.querySelector('.dynamictitle').innerHTML = title;
+          }
+      }
+
+      const scrollTo = function(event) {
+          event.preventDefault();
+          ele.scrollLeft = ele.querySelector(this.getAttribute('href')).offsetLeft;
+      }
+      
+      const nextSlide = function() {
+          if(!carousel.querySelector('ol li:last-child').classList.contains('selected')) {
+              carousel.querySelector('ol li.selected').nextElementSibling.querySelector('a').click();
+          } else {
+              carousel.querySelector('ol li:first-child a').click();
+          }
+      }
+
+      const prevSlide = function() {
+          if(!carousel.querySelector('ol li:first-child').classList.contains('selected')) {
+              carousel.querySelector('ol li.selected').previousElementSibling.querySelector('a').click();
+          } else {
+              carousel.querySelector('ol li:last-child a').click();
+          }
+      }
+      
+      const setInteracted = function() {
+        ele.classList.add('interacted');
+      }
+          
+      // Attach the handlers
+      ele.addEventListener("scroll", debounce(setSelected));
+      ele.addEventListener("touchstart", setInteracted);
+      ele.addEventListener('keydown', function (e){
+          if(e.key == 'ArrowLeft') ele.classList.add('interacted');
+          if(e.key == 'ArrowRight') ele.classList.add('interacted');
+      });
+
+      nextarrow.addEventListener("click", nextSlide);
+      nextarrow.addEventListener("mousedown", setInteracted);
+      nextarrow.addEventListener("touchstart", setInteracted);
+
+      prevarrow.addEventListener("click", prevSlide);
+      prevarrow.addEventListener("mousedown", setInteracted);
+      prevarrow.addEventListener("touchstart", setInteracted);
+
+      bullets.forEach(function(bullet) {
+        bullet.querySelector('a').addEventListener('click', scrollTo);
+        bullet.addEventListener("mousedown", setInteracted);
+        bullet.addEventListener("touchstart", setInteracted);
+      });
+
+      //setInterval for autoplay
+      if(carousel.getAttribute('duration')) {
+        setInterval(function(){ 
+          if (ele != document.querySelector(".carousel:hover ul") && ele.classList.contains('interacted')==false) {
+            nextarrow.click();
+          }
+        }, carousel.getAttribute('duration'));
+      }
+    
+    
+  }); //end foreach
+
+}); //end onload
+
+
+
+/**
+* Debounce functions for better performance
+* (c) 2021 Chris Ferdinandi, MIT License, https://gomakethings.com
+* @param  {Function} fn The function to debounce
+*/
+function debounce (fn) {
+// Setup a timer
+let timeout;
+// Return a function to run debounced
+return function () {
+  // Setup the arguments
+  let context = this;
+  let args = arguments;
+  // If there's a timer, cancel it
+  if (timeout) {
+    window.cancelAnimationFrame(timeout);
+  }
+  // Setup the new requestAnimationFrame()
+  timeout = window.requestAnimationFrame(function () {
+    fn.apply(context, args);
+  });
+};
+}
