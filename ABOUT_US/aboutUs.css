@@ -134,12 +134,15 @@ p {
     padding-left: 25px;
 }
 
+
+
 .secondSection>.containerSectiuneSecunda>h1 {
     color: var(--albastru);
     padding-top: 70px;
     font-size: 1.76rem;
     width: 90%;
     text-align: center;
+
 }
 
 .secondSection>.containerSectiuneSecunda>p {
@@ -149,6 +152,7 @@ p {
     font-size: 1.4rem;
     text-align: center;
 }
+
 
 
 /* CARDURI SECTIUNE */
@@ -315,7 +319,7 @@ p {
     flex-direction: column;
     display: flex;
     width: 100%;
-    min-width: 100%;
+    min-width: 108%;
     list-style: none;
     scroll-snap-align: start;
     display: flex;
@@ -1001,6 +1005,8 @@ p {
 
     #firstSection>.container>img {
         height: 400px;
+        margin-left: 0px;
+        width: 70%;
     }
 
     /* A DOUA SECTIUNE */
@@ -1030,10 +1036,12 @@ p {
 
     .secondSection>.containerSectiuneSecunda>p {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         font-size: 1.7rem;
         width: 45%;
+        text-align: left;
     }
+    
 
 
     /* A TREIA SECTIUNE */
@@ -1053,7 +1061,7 @@ p {
     /* CARD 1 */
 
     .card-1 {
-        margin-right: 50px;
+
         justify-content: space-between;
         display: flex;
         flex: 10 0 10%;
@@ -1067,13 +1075,10 @@ p {
         padding-top: 80px;
     }
 
-    .card-1>.card>p {
-        font-size: 1.3rem;
-    }
 
     .card-1>.card>img {
-        width: 8%;
-        padding-top: 94px;
+        width: 14%;
+        padding-top: 44px;
     }
 
     .card-1>.card>button>a {
@@ -1093,72 +1098,16 @@ p {
     }
 
     .card>img {
-        width: 10%;
+        
         padding-right: 20px;
     }
 
+    /* CAROUSEL */
 
-    /* SECTIUNE DESEN */
-
-    .containerDesen {
-        height: 351px;
+    .carousel ul {
+        height: 40vh;
     }
 
-    .sectiuneDesen {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .sectiuneDesen>.containerDesen>h1 {
-        display: flex;
-        width: 90%;
-        font-size: 2.5rem;
-        align-self: center;
-    }
-
-    .sectiuneDesen>img {
-        padding-top: 0px;
-        width: 100%;
-    }
-
-
-    .sectiuneDesen>.containerDesen>button>a {
-        font-size: 1.2rem;
-    }
-
-    /* SECTIUNE PROIECTE */
-
-    .sectiuneProiecte {
-        margin-top: 0px;
-    }
-
-    .sectiuneProiecte>h1 {
-        padding-top: 100px;
-        font-size: 2.5rem;
-    }
-
-    .chenarProiect {
-        height: 680px;
-    }
-
-    .chenarProiect>h1 {
-        font-size: 1.6rem;
-    }
-
-    .chenarProiect p {
-        font-size: 1.5rem;
-        font-weight: 100;
-        line-height: 2rem;
-    }
-
-    .chenarProiect>button>a {
-        font-size: 1.2rem;
-    }
-
-    .sectiuneProiecte>button {
-        padding: 13px;
-    }
 
 
     .ultimaSectiune>a>button {
