@@ -57,6 +57,7 @@ p {
     align-items: center;
     margin-top: 50px;
     justify-content: center;
+    padding-bottom: 0;
 }
 
 .overlay-menu {
