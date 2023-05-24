@@ -278,19 +278,20 @@ li.nav-item>a {
   }
 
   #burgerListContainer {
+      
+    right: 0px;
       position: absolute;
       width: 100%;
       max-width: none;
       color: #fff;
       z-index: 12;
-      transition: right 0.3s cubic-bezier(0.82, 0.085, 0.395, 0.895);
       font-size: 1.2rem;
       font-weight: bold;
+      transition: all .5s ease-in-out;
   }
 
   #burgerListContainer>ul {
       text-decoration: none;
-      transition: all 0.5s ease-in;
   }
 
   #burgerLinks>ul>li {

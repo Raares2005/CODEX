@@ -24,15 +24,11 @@ body {
   
 }
 
-
-
 a {
   text-decoration: none !important;
 }
 
-#section-1 #section-1_afla-mai-multe-btn--link {
-  text-decoration: none !important;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
   width: 100%;
@@ -114,6 +110,9 @@ S: I
   margin: 10px 0;
 }
 
+#section-1 #section-1_afla-mai-multe-btn--link button {
+  color: #030303;
+}
 
 
 
