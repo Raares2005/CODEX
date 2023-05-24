@@ -1,6 +1,5 @@
 const btn = document.getElementById("containerLogoBurger");
 const backdrop = document.getElementById("backdrop");
-const btnServicii = document.getElementById("btnServicii");
 const btnServiciiBurger = document.getElementById("btnBurgerDropdownContainer");
 const body = document.getElementById("body")
 
@@ -10,22 +9,16 @@ if (btn && backdrop) {
     let widthB = body.offsetWidth;
   const bContainerUl = document.getElementById("containerBurgerStuff");
   btn.addEventListener("click", function () {
-    if (!(bLogo.classList.contains("open")) && widthB > 500) {
+    if (!(bLogo.classList.contains("open"))) {
       bLogo.classList.add("open");
       backdrop.style.display = "block";
-      bContainer.style.width = "300px";
-      bContainerUl.style.display = "flex";
-      body.style.overflow = "hidden";
-    }else if (!(bLogo.classList.contains("open")) && widthB <= 500) {
-      bLogo.classList.add("open");
-      backdrop.style.display = "block";
-      bContainer.style.width = "200px";
+      bContainer.style.width = "100vw";
       bContainerUl.style.display = "flex";
       body.style.overflow = "hidden";
     } else {
       bLogo.classList.remove("open");
       backdrop.style.display = "none";
-      bContainer.style.width = "0px";
+      bContainer.style.width = "0vw";
       bContainerUl.style.display = "none";
       body.style.overflow = "visible";
     }
