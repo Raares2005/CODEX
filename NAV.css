@@ -458,7 +458,7 @@ li.nav-item>a {
     list-style: none;
     padding-left: 30px;
     padding-top: 25px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
 }
 
@@ -472,7 +472,7 @@ li.nav-item>a {
 }
 
 .containerPozeOverlay>li>a>img {
-    width: 100px;
+    width: 80px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -483,7 +483,7 @@ li.nav-item>a {
 .burgerNav>li>a>button {
     font-weight: 600;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-color: #2954C7;
     background-color: var(--albastru-deschis);
     border-radius: 10px;
