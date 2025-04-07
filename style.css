@@ -352,7 +352,9 @@ p {
     display: flex;
     justify-content: center;
     font-size: 1.6rem;
-    padding-top: 30px;
+   
+    margin-top: 120px;
+    text-align: center;
 }
 
 .sectiuneProiecte> a > button {
@@ -368,10 +370,12 @@ p {
 }
 
 .containerProiecte {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10rem;
 }
 
 .chenarProiect {
@@ -383,6 +387,16 @@ p {
     height: 520px;
     margin-top: 100px;
     width: 50%;
+}
+
+.test {
+    animation: moveInBottom 1.2s ease-out;
+align-items: flex-start;
+display: flex;
+flex-direction: column;
+box-shadow: 2px 4px 8px 1px rgb(163, 160, 160);
+height: 520px;
+
 }
 
 .chenarProiect>img {
@@ -415,7 +429,8 @@ p {
 .chenarProiect>button>a {
     font-weight: bold;
     font-size: 1rem;
-    color: var(--albastru-deschis);
+    color: rgb(41, 84, 199);;
+    
 }
 
 

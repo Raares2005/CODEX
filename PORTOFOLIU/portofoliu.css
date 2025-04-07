@@ -81,7 +81,7 @@ p {
 }
 
 
-.chenarProiect>.boxShadow>h1 {
+.chenarProiect .test >.boxShadow>h1 {
     width: 95%;
     font-size: 1.2rem;
     padding-left: 15px;
@@ -89,24 +89,24 @@ p {
 
 }
 
-.chenarProiect>.boxShadow>button>a {
+.chenarProiect .test >.boxShadow>button>a {
     font-weight: bold;
     font-size: 1rem;
     color: var(--albastru-deschis);
 }
 
-.chenarProiect>.boxShadow>button {
+.chenarProiect .test>.boxShadow>button {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
 }
 
-.chenarProiect>.boxShadow>button:hover  {
+.chenarProiect .test>.boxShadow>button:hover  {
     cursor: pointer;
     transform: scale(1.05);
 }
 
-.chenarProiect>.boxShadow>button:hover::after {
+.chenarProiect .test>.boxShadow>button:hover::after {
     transform: scaleX(1) scaleY(1);
     opacity: 0;
 }
@@ -119,11 +119,11 @@ p {
 }
 
 .containerProiecte {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
 }
 
 .ultimaSectiune {
@@ -198,6 +198,3 @@ p {
 
 
 }
-
-
-
