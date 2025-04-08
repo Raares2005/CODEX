@@ -36,6 +36,16 @@ p {
 
 /* PRIMA SECTIUNE */
 
+.learnmore {
+    color: #2954C7 !important;
+    justify-content: center;
+    animation: moveInBottom 1.4s ease-out;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+}
+
 #firstSection {
     background-color: #051130;
     padding: 60px 0;
@@ -673,9 +683,10 @@ height: 520px;
 
     .containerProiecte {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
     }
+
 
 
     /* ULTIMA SECTIUNE */
