@@ -32,11 +32,21 @@ body {
 
 }
 
+.sectiuneProiecte> .containerProiecte > .chenarProiect> button > a {
+  color: #2954C7 !important;
+}
+
+.sectiuneProiecte> .containerProiecte > .chenarProiect> button  {
+  color: #2954C7 !important;
+}
+
 a {
   color: #fff;
   text-decoration: none;
   display: flex;
 }
+
+
 
 nav {
   background-color: var(--albastru);

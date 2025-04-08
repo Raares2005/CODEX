@@ -385,7 +385,7 @@ p {
     flex-direction: column;
     box-shadow: 2px 4px 8px 1px rgb(163, 160, 160);
     height: 520px;
-    margin-top: 100px;
+    margin-top: 3rem;
     width: 50%;
 }
 
@@ -424,15 +424,20 @@ height: 520px;
     margin-left: 15px;
     border: none;
     background: none;
+    color: red !important;
 }
 
 .chenarProiect>button>a {
     font-weight: bold;
     font-size: 1rem;
-    color: rgb(41, 84, 199);;
+    color: rgb(41, 84, 199) !important;
     
 }
 
+.imaginePortofoliu  {
+    width: 25rem !important;
+    padding-top: 3rem;
+}
 
 .chenarProiect button:hover  {
     cursor: pointer;
@@ -444,7 +449,7 @@ height: 520px;
     opacity: 0;
 }
 
-.sectiuneProiecte> a >button {
+.sectiuneProiecte> .containerProiecte > .chenarProiect> button > a {
     align-self: flex-end;
     display: flex;
     padding: 10px;
@@ -459,18 +464,18 @@ height: 520px;
     border-width: 2px;
     outline: none;
     background: none;
+    color: #2954C7 !important;
 }
 
 
-.sectiuneProiecte> a > button {
-    color: var(--albastru-deschis);
+.sectiuneProiecte> .containerProiecte > .chenarProiect> button > a {
+    color: var(--albastru-deschis) !important;
     font-size: 1rem;
     font-weight: bold;
     background-color: none;
     outline: none;
 }
-
-.sectiuneProiecte> a >button:hover  {
+.sectiuneProiecte> .containerProiecte > .chenarProiect> a >button:hover  {
     cursor: pointer;
     transform: scale(1.1);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
