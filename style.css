@@ -394,7 +394,7 @@ p {
     display: flex;
     flex-direction: column;
     box-shadow: 2px 4px 8px 1px rgb(163, 160, 160);
-    height: 520px;
+    height: 560px;
     margin-top: 3rem;
     width: 50%;
 }
